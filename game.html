@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Room</title>
+</head>
+<body>
+    <h1>Game Room: {{ game_id }}</h1>
+    <form action="/submit_response" method="post">
+        <input type="hidden" name="game_id" value="{{ game_id }}">
+        <input type="text" name="player_name" placeholder="Your name">
+        <input type="text" name="response" placeholder="Your response">
+        <button type="submit">Submit Response</button>
+    </form>
+</body>
+</html>
